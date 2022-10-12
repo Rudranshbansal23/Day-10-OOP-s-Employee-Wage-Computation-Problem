@@ -6,7 +6,7 @@ import java.util.Scanner;
 
 public class EmployeeWage {
 	ArrayList<Integer> Wage = new ArrayList<Integer>(); // Arraylist to store Integer value
-	ArrayList<String> Wages = new ArrayList<String>(); // Arreylist to dtore String value
+	ArrayList<String> companylist = new ArrayList<String>(); // Arreylist to dtore String value
 
 	void check() {
 		// variable
@@ -22,7 +22,7 @@ public class EmployeeWage {
 		Scanner p2 = new Scanner(System.in);
 		String x = p2.nextLine();
 		System.out.println(x); // taking user input company name
-		Wages.add(x);
+		companylist.add(x);
 
 		Scanner scanner = new Scanner(System.in);
 		System.out.println("Enter Employee rate Per hour of your Company :");
@@ -61,31 +61,9 @@ public class EmployeeWage {
 		totalsalary = totalEmpHr * empRatePerHr1;
 		finalsalary += totalsalary;
 
-		Wage.add(finalsalary);
-		System.out.println(Wages);
-		System.out.println(Wage);
+		Wage.add(finalsalary); // store the value of monthly salary of employee
+		System.out.println("Company Names" + companylist); //
+		System.out.println("Wages of Months" + Wage);
 
 	}
-
-
-
-
-	@SuppressWarnings("resource")
-	public static void main(String[] args) {
-
-		System.out.println("How many company data you want to Enter ");
-		// creating object for to call method
-		EmployeeWage mahindra = new EmployeeWage();
-
-		Scanner p1 = new Scanner(System.in);
-		p1.toString();
-		int noOfCompanys = p1.nextInt(); // taking for how many company you want to store data
-
-		for (int i = 1; i <= noOfCompanys; i++) {
-
-			mahindra.check(); // calling method in object
-
-		}
-	}
-
 }

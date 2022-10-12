@@ -3,7 +3,7 @@ package com.bridgelabz.EmployeeWageComputation;
 import java.util.Scanner;
 
 @SuppressWarnings("unused")
-public class UC11 {
+public class UC12 {
 	public static void main(String args[]) {
 		// welcome message
 		System.out.println("Welcome to employee wage computation problem");
